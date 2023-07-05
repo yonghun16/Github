@@ -78,10 +78,33 @@ header {
   }
   .menu-group {
     display: flex;
+    align-items: center;
+    height: 100%;
   }
   .logo {
+    margin-right: 10px;
+    a {
+      background: url("../img/logo.svg");
+      width: 32px;
+      height: 32px;
+      display: block;
+      text-indent: -9999px;
+      &:hover {
+        background: url("../img/logo_on.svg");
+      }
+    }
   }
   .main-menu {
     display: flex;
+    li {
+      a {
+        display: block;
+        padding: 10px;
+        color: #3c4146;
+        &:hover {
+          color: #4078c9;
+        }
+      }
+    }
   }
 }
