@@ -7,6 +7,9 @@
   font-weight: 400;
   color: #333;
 }
+a {
+  text-decoration: none;
+}
 
 // BTN
 .btn {
@@ -23,6 +26,7 @@
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
+  color: #333;
   &:hover::before {
     content: "";
     position: absolute;

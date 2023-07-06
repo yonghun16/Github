@@ -1,19 +1,33 @@
 extends template/layout
 
 block content 
-  .body__container 
-    //- HEADER
-    header.section 
-      .inner
-        .menu-group
-          .logo
-            a(href="#") Github
-          ul.main-menu
-            li
-              a(href="#") Personal
-            li
-              a(href="#") Open source
-            li
-              a(href="#") Business
-            li
-              a(href="#") Explore
+    .body__container 
+        //- HEADER
+        header.section 
+            .inner
+                .menu-group
+                    .logo
+                        a(href="#") Github
+                    ul.main-menu
+                        li 
+                            a(href="#") Personal
+                        li
+                            a(href="#") Open source
+                        li
+                            a(href="#") Business
+                        li
+                            a(href="#") Explore
+                .sign-group 
+                    .btn-group
+                        a(href="#" class="btn sign-in") Sign in 
+                        a(href="#" class="btn btn--primary sign-up") Sign up  
+                    form(id="search-form" action="" method="post") 
+                        input(type="text" id="search" class="input--text" placeholder="Search GitHub")
+                        input(type="submit" value="Submit")
+                    ul.sub-menu 
+                        li 
+                            a(href="#") Pricing  
+                        li 
+                            a(href="#") Blog  
+                        li 
+                            a(href="#") Pricing   
