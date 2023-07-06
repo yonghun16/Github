@@ -11,6 +11,7 @@ a {
   text-decoration: none;
 }
 
+
 // BTN
 .btn {
   height: 34px;
@@ -70,6 +71,23 @@ a {
   }
 }
 
+
+// FLOAT CLEARFIX
+.clear {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
+
+
 // HEADER
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
@@ -110,5 +128,8 @@ header {
         }
       }
     }
+  }
+  .sign-group {
+    display: flex;
   }
 }
