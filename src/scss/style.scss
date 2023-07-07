@@ -71,7 +71,6 @@ a {
   }
 }
 
-
 // FLOAT CLEARFIX
 .clear {
   &::after {
@@ -87,6 +86,16 @@ a {
   float: right;
 }
 
+/* SUMMARY */
+.summary {
+
+}
+.summary__title {
+
+}
+.summary__description {
+  
+}
 
 // HEADER
 header {
@@ -167,4 +176,9 @@ header {
       }
     }
   }
+}
+
+// VISUAL
+.section--visual {
+
 }

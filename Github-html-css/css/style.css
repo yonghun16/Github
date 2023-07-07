@@ -10,20 +10,6 @@ a {
 }
 
 
-/* FLOAT CLEARFIX */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-.float--left {
-  float: left;
-}
-.float--right {
-  float: right;
-}
-
-
 /* BTN */
 .btn{
   height: 34px;
@@ -72,10 +58,37 @@ a {
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.075),
               0 0 5px rgba(81, 167, 232, 0.5);
 }
+
 /* Vendor Prefix (브라우저 업체별 접두사) */
 .input--text::-webkit-input-placeholder { color: #cacaca; }
 .input--text::-ms-input-placeholder { color: #cacaca; }
 .input--text::-moz-input-placeholder { color: #cacaca; }
+
+/* FLOAT CLEARFIX */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
+
+/* SUMMARY */
+.summary {
+
+}
+
+.summary__title {
+
+}
+
+.summary__description {
+
+}
 
 
 /* HEADER */
@@ -169,4 +182,10 @@ header .sub-menu li a {
 
 header .sub-menu li a:hover {
   color: #4078c0;
+}
+
+
+/* VISUAL */
+.section--visual {
+
 }
