@@ -201,7 +201,7 @@ header {
   background-position: bottom left;
   background-size: cover;
   &::before {
-    content= "";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
