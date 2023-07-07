@@ -1,5 +1,5 @@
-<div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=120&section=header&text=GitHub%20main%20page%20Clone&fontSize=35" />	
+<div>
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=120&section=header&text=GitHub%20메인%20페이지%20클론&fontSize=35" />	
 </div>
 
 https://yonghun16.github.io/Github/
