@@ -131,5 +131,40 @@ header {
   }
   .sign-group {
     display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .btn-group {
+    order: 2;
+    display: flex;
+    .sign-in {
+      margin-right: 4px;
+    }
+  }
+  #search-form {
+    order: 1;
+    margin-right: 12px;
+  }
+  #search {
+    width: 160px;
+    font-size: 14px;
+    &+[type="submit"]{
+      display: none;
+    }
+  }
+  .sub-menu {
+    display:flex;
+    margin-right: 10px;
+  }
+  li {
+    a {
+      padding: 8px;
+      display: block;
+      font-size: 13px;
+      color: #3c4146;
+      &:hover {
+        color: #4078c0;
+      }
+    }
   }
 }
