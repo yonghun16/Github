@@ -1,7 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=180&section=header&text=GitHub%20메인%20페이지%20클론&fontSize=45&animation=fadeIn&fontAlignY=38&desc=FrontEnd16&descAlignY=55&descAlign=85)
 
 <a href="https://yonghun16.github.io/Github/">
-	<img src="https://raw.githubusercontent.com/yonghun16/Github/main/github_front_page.png" width=600px />
+	<img src="https://raw.githubusercontent.com/yonghun16/Github/main/github_front_page.png" width=800px />
 </a>
 
 https://yonghun16.github.io/Github/
