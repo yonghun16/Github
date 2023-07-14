@@ -146,13 +146,54 @@
         <div class="inner">
           <div class="summary">
             <div class="summary__title">
+              Where is GitHub?
             </div>
             <div class="summary__description">
+              GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
             </div>
           </div>
+          <div id="map"></div>
+        </div>
+      </section>
+
+      <!-- Pricing card -->
+      <section class="section section--pricing">
+        <div class="inner">
+
+          <div class="card">
+            <div class="cell cell1">
+              <a href="#" class="btn btn--primary">Sign up for GitHub</a>
+            </div>
+            <div class="cell cell2">
+              Public projects are always free. Work together across unlimited private repositories for $7 / month.
+            </div>
+          </div>
+
         </div>
       </section>
 
     </div>
+    <script>
+    function initMap() {
+      const myLatLang = {
+        lat: 37.782293,
+        lng: -122.391240
+      }
+      const map = new google.maps.Map(
+        document.getElementById('map'),
+        {
+          center: myLatLang,
+          scrollwheel: false,
+          zoom: 18
+        }
+      );
+      const marker = new google.maps.Marker({
+        position: myLatLang,
+        map: map,
+        title: 'GitHub'
+      });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnFxGp8moiZPF80tfeAL-UfCkroxmTkLs&callback=initMap" async defer> </script>
   </body>
 </html>
