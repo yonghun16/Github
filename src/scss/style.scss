@@ -1,11 +1,11 @@
 @import "_reset";
-
+@import "_variables";
 // COMMON
 .body__container {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #333;
+  color: $grayColor;
 }
 a {
   text-decoration: none;
@@ -17,11 +17,11 @@ a {
   font: {
     size: 14px;
     weight: 500;
-  };
+  }
   padding: 0 12px;
   height: 34px;
-  background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
-  border: 1px solid #d5d5d5;
+  background: $btnGrayBackColor2 linear-gradient(to bottom, $btnGrayBackColor1, $btnGrayBackColor2);
+  border: 1px solid $btnGrayBorderColor;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
@@ -29,7 +29,7 @@ a {
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
-  color: #333;
+  color: $grayColor;
   &:hover::before {
     content: "";
     position: absolute;
@@ -40,9 +40,9 @@ a {
     background: rgba(0, 0, 0, 0.07);
   }
   &.btn--primary {
-    border: 1px solid #65b836;
-    color: #fff;
-    background: #55a532 linear-gradient(#91dd70, #44ae2e);
+    border: 1px solid $btnPriBorderColor;
+    color: $whiteColor;
+    background: $btnPriBackColor1 linear-gradient($btnPriBackColor2, $btnPriBackColor3);
   }
 }
 
@@ -54,11 +54,11 @@ a {
   border-radius: 5px;
   box-sizing: border-box;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: $boxShadow75; 
   font-size: 16px;
   &:focus {
     border-color: #51a7e8;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    box-shadow: $boxShadow75, 
       0 0 5px rgba(81, 167, 232, 0.5);
   }
   // Vendor Prefix (브라우저 업체별 접두사)
@@ -81,27 +81,24 @@ a {
     display: block;
   }
 }
-.float--left {
-  float: left;
-}
-.float--right {
-  float: right;
-}
+.float--left { float: left; }
+.float--right { float: right; }
 
 /* SUMMARY */
-.summary {
-
-}
 .summary__title {
-  font-size: 38px;
-  font-weight: 300;
+  font: {
+    size: 38px;
+    weight: 300;
+  }
   line-height: 1.25;
   margin-bottom: 18px;
 }
 .summary__description {
-  font-size: 26px;
-  font-weight: 300;
-  color: #767676;
+  font: {
+    size: 26px;
+    weight: 300;
+  }
+  color: $summaryColor;
   line-height: 1.5;
 }
 
@@ -198,10 +195,12 @@ header {
 
 // VISUAL
 .section--visual {
-  background-image: url("../img/bg.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: cover;
+  background: {
+    image: url("../img/bg.jpg");
+    repeat: no-repeat;
+    position: bottom left;
+    size: cover;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -214,15 +213,16 @@ header {
   .inner {
     padding: 160px 0;
   }
-  .summary__title {
+  @mixin summaryFont {
     color: #FFF;
-    font-size: 54px;
     text-shadow: 0 1px 1px rgba(0,0,0,.25),
                  0 1px 25px rgba(0,0,0,.75);
   }
+  .summary__title {
+    @include summaryFont;
+    font-size: 54px;
+  }
   .summary__description {
-    color: #FFF;
-    text-shadow: 0 1px 1px rgba(0,0,0,.25),
-                 0 1px 25px rgba(0,0,0,.75);
+    @include summaryFont;
   }
 }
