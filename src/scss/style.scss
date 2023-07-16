@@ -1,5 +1,7 @@
 @import "_reset";
 @import "_variables";
+@import "_mixins";
+
 // COMMON
 .body__container {
   font-family: "Roboto", sans-serif;
@@ -11,7 +13,6 @@ a {
   text-decoration: none;
 }
 
-
 // BTN
 .btn {
   font: {
@@ -20,7 +21,8 @@ a {
   }
   padding: 0 12px;
   height: 34px;
-  background: $btnGrayBackColor2 linear-gradient(to bottom, $btnGrayBackColor1, $btnGrayBackColor2);
+  background: $btnGrayBackColor2
+    linear-gradient(to bottom, $btnGrayBackColor1, $btnGrayBackColor2);
   border: 1px solid $btnGrayBorderColor;
   border-radius: 4px;
   display: inline-flex;
@@ -42,7 +44,8 @@ a {
   &.btn--primary {
     border: 1px solid $btnPriBorderColor;
     color: $whiteColor;
-    background: $btnPriBackColor1 linear-gradient($btnPriBackColor2, $btnPriBackColor3);
+    background: $btnPriBackColor1
+      linear-gradient($btnPriBackColor2, $btnPriBackColor3);
   }
 }
 
@@ -54,12 +57,11 @@ a {
   border-radius: 5px;
   box-sizing: border-box;
   outline: none;
-  box-shadow: $boxShadow75; 
+  box-shadow: $boxShadow75;
   font-size: 16px;
   &:focus {
     border-color: #51a7e8;
-    box-shadow: $boxShadow75, 
-      0 0 5px rgba(81, 167, 232, 0.5);
+    box-shadow: $boxShadow75, 0 0 5px rgba(81, 167, 232, 0.5);
   }
   // Vendor Prefix (브라우저 업체별 접두사)
   &::-webkit-input-placeholder {
@@ -81,8 +83,12 @@ a {
     display: block;
   }
 }
-.float--left { float: left; }
-.float--right { float: right; }
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
 
 /* SUMMARY */
 .summary__title {
@@ -110,9 +116,8 @@ a {
     margin: 0 auto; // 가로사이즈가 정의되어 있어야, 가운데 정렬됨.
     box-sizing: border-box;
     position: relative;
-  }  
+  }
 }
-
 
 // HEADER
 header {
@@ -172,12 +177,12 @@ header {
   #search {
     width: 160px;
     font-size: 14px;
-    &+[type="submit"]{
+    & + [type="submit"] {
       display: none;
     }
   }
   .sub-menu {
-    display:flex;
+    display: flex;
     margin-right: 10px;
     li {
       a {
@@ -208,15 +213,10 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, 0.3);
   }
   .inner {
     padding: 160px 0;
-  }
-  @mixin summaryFont {
-    color: #FFF;
-    text-shadow: 0 1px 1px rgba(0,0,0,.25),
-                 0 1px 25px rgba(0,0,0,.75);
   }
   .summary__title {
     @include summaryFont;
