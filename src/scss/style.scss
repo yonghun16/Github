@@ -76,7 +76,7 @@ a {
 }
 
 // FLOAT CLEARFIX
-.clear {
+.clearfix {
   &::after {
     content: "";
     clear: both;
@@ -198,7 +198,6 @@ header {
   }
 }
 
-
 // VISUAL
 .section--visual {
   background: {
@@ -248,7 +247,7 @@ header {
   .caption {
     font-size: 12px;
     margin-top: 5px;
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 0.6);
     line-height: 1.5;
     text-align: center;
   }
@@ -260,7 +259,6 @@ header {
     justify-content: center;
   }
 }
-
 
 // FEATURE
 .section--feature {
@@ -287,5 +285,39 @@ header {
       }
     }
   }
+  .tiles {
+    border: {
+      top: 1px solid #e5e5e5;
+      bottom: 1px solid #e5e5e5;
+    }
+    .inner {
+      max-width: 1200px;
+    }
+    li {
+      padding: 34px 24px;
+      text-align: center;
+      line-height: 1.5;
+      border-right: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      width: 25%;
+      float: left;
+      &:last-child {
+        border-right: none;
+      }
+      img {
+        max-width: 100%;
+        padding: 14px 10% 24px;
+        box-sizing: border-box;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        color: #767676;
+      }
+    }
+  }
 }
-

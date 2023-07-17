@@ -35,8 +35,8 @@ block content
         section.section.section--visual 
             .inner
                 .summary 
-                    .summary__title How&nbsp;people build&nbsp;software
-                    .summary__description Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
+                    h2.summary__title How&nbsp;people build&nbsp;software
+                    p.summary__description Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
                 form(id="sign-form" method="POST" action="") 
                     ul
                         li 
@@ -52,10 +52,28 @@ block content
         //- FEATURE
         section.section.section--feature 
             .summary 
-                .summary__title Welcome home, developers
-                .summary__description GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
+                h2.summary__title Welcome home, developers
+                p.summary__description GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
             .video
                 .video-ratio 
                     iframe(width="1280" height="720" src="https://www.youtube.com/embed/afvT1c1ii0c" title="How we build software." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
             .tiles 
+                .inner 
+                    ul.clearfix 
+                        li 
+                            img(src="img/home-ill1-build.png", alt="build")
+                            h3 For everything you build
+                            p Host and manage your code on GitHub. You can keep your work private or share it with the world.
+                        li 
+                            img(src="img/home-ill2-work.png", alt="work")
+                            h3 A better way to work
+                            p From hobbyists to professionals, GitHub helps developers simplify the way they build software.
+                        li 
+                            img(src="img/home-ill3-projects.png", alt="project")
+                            h3 Millions of projects
+                            p GitHub is home to millions of open source projects. Try one out or get inspired to create your own.
+                        li 
+                            img(src="img/home-ill4-platform.png", alt="platform")
+                            h3 One platform, from start to finish
+                            p With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.
 
