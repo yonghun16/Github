@@ -76,4 +76,33 @@ block content
                             img(src="img/home-ill4-platform.png", alt="platform")
                             h3 One platform, from start to finish
                             p With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.
+        //- Where is
+        section.section.section--where-is 
+            .inner 
+                .summary 
+                    .summary__title Where is GitHub?
+                    .summary__description GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+                #map
+    script.
+        function initMap() {
+            const myLatLang = {
+                lat: 37.782293,
+                lng: -122.39124,
+            };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: myLatLang,
+                scrollwheel: false,
+                zoom: 18,
+            });
+            const marker = new google.maps.Marker({
+                position: myLatLang,
+                map: map,
+                title: "GitHub",
+            });
+        }
+    script(
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnFxGp8moiZPF80tfeAL-UfCkroxmTkLs&callback=initMap"
+        async
+        defer
+    )
 
