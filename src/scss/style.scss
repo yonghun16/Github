@@ -217,6 +217,11 @@ header {
   }
   .inner {
     padding: 160px 0;
+    display: flex;
+  }
+  .summary {
+    flex: 1;
+    margin-right: 90px;
   }
   .summary__title {
     @include summaryFont;
@@ -224,5 +229,33 @@ header {
   }
   .summary__description {
     @include summaryFont;
+  }
+}
+#sign-form {
+  width: 340px;
+  margin-top: 16px;
+  .li {
+    margin-bottom: 17px;
+    &:last-child {
+      margin-bottom: none;
+    }
+  }
+  .input--text {
+    width: 100%;
+    height: 40px;
+  }
+  .caption {
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, .6);
+    line-height: 1.5;
+    text-align: center;
+  }
+  [type="submit"] {
+    width: 100%;
+    height: 62px;
+    padding: 0 25px;
+    font-size: 20px;
+    justify-content: center;
   }
 }
