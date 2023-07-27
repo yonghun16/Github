@@ -373,3 +373,41 @@ header {
     }
   }
 }
+
+
+// FOOTER
+footer {
+  .inner {
+    padding: 50px 0;
+    border-top: 1px solid #eee;
+  }
+  .site-links {
+    display: flex;
+    li {
+      font-size: 12px;
+      margin-right: 10px;
+      color: #767676;
+      a {
+        color: #4078c0;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+    &:hover {
+      svg {
+        fill: #4078c0;
+      }
+    }
+  }
+}
