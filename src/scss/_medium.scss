@@ -1,0 +1,138 @@
+@media (max-width: 1024px) {
+  header.section {
+    .inner {
+      max-width: none;
+      height: auto;
+      padding: 0 20px;
+    }
+  }
+  header {
+    .menu-group, 
+    .sign-group {
+      float: none;
+    }
+    .menu-group {
+      display: block;
+    }
+    .logo {
+      padding: 12px 0;
+    }
+    .main-menu {
+      display: block;
+      margin-bottom: 10px;
+      li {
+        border-top: 1px solid #e5e5e5;
+        a {
+          padding: 16px 0;
+        }
+      }
+    }
+    .sign-group {
+      display: block;
+      padding: 10px 0 20px;
+    }
+    .btn-group {
+      display: block;
+      .btn {
+        justify-content: center;
+      }
+      .sign-in {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+    #search-form {
+      margin-top: 12px;
+      margin-right: 0;
+    }
+    #search {
+      width: 100%;
+      height: 42px;
+      text-align: center;
+    }
+    .sub-menu {
+      margin-top: 12px;
+      margin-right: 0;
+      justify-content: center;
+    }
+    .toggle {
+      display: none;
+    }
+    .toggle.on {
+      display: block;
+    }
+  }
+  #toggle-btn {
+    display: block;
+  }
+
+  // VISUAL
+  .section--visual {
+    background-image: url("../img/bg-small.jpg");
+    .inner {
+      display: block;
+      max-width: none;
+      padding: 80px 20px;
+    }
+    .summary {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+    #sign-form {
+      width: auto;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  // FEATURE
+  .section--feature {
+    .summary {
+      padding: 66px 20px 0 20px;
+    }
+    .tiles {
+      li {
+        width: 50%;
+        &:nth-child(2) {
+          border-right: none;
+        }
+        img {
+          padding: 14px 30% 24px;
+        }
+      }
+    }
+  }
+
+  // WHERE IS
+  .section--where-is {
+    .inner {
+      max-width: none;
+      padding: 80px 20px 0 20px;
+    }
+  }
+
+  // PRICING CARD
+  .section--pricing {
+    .inner {
+      max-width: none;
+      padding: 80px 20px;
+    }
+    .card {
+      .cell2 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // FOOTER
+  footer {
+    .inner {
+      padding: 50px 20px;
+    }
+    .logo {
+      display: none;
+    }
+  }
+}
+
