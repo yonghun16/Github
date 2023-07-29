@@ -1,6 +1,28 @@
-import { random } from "./util";
+(function (window, document) {
+  'use strict';
 
-const rOne = random(10);
-const rTwo = random(20);
+  const $toggles = document.querySelectorAll('.toggle'); // NodeList
+  const $toggleBtn = document.getElementById('toggle-btn');
 
-console.log(`${rOne} ${rTwo}`);
+  $toggleBtn.addEventListener('click', function () {
+    toggleElements();
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1024) {
+      offElements();
+    }
+  });
+
+  function toggleElements() {
+    [].forEach.call($toggles, function (toggle) {
+      toggle.classList.toggle('on');
+    });
+  }
+
+  function offElements() {
+    [].forEach.call($toggles, function (toggle) {
+      toggle.classList.remove('on');
+    });
+  }
+}) (window, document)

@@ -8,7 +8,7 @@ block content
                 .menu-group.float--left
                     .logo
                         a(href="#") Github
-                    ul.main-menu
+                    ul.main-menu.toggle 
                         li 
                             a(href="#") Personal
                         li
@@ -17,7 +17,7 @@ block content
                             a(href="#") Business
                         li
                             a(href="#") Explore
-                .sign-group.float--right
+                .sign-group.float--right.toggle 
                     .btn-group
                         a(href="#" class="btn sign-in") Sign in 
                         a(href="#" class="btn btn--primary sign-up") Sign up  
@@ -31,6 +31,8 @@ block content
                             a(href="#") Blog  
                         li 
                             a(href="#") Support  
+                #toggle-btn Header menu Toggle Button
+
         //- VISUAL
         section.section.section--visual 
             .inner
