@@ -5,7 +5,7 @@
 
 <ul>
 	<li>
-		<a href="https://yonghun16.github.io/Github/"> "GitHub Site Clone" 보러가기 </a>
+		<a href="https://yonghun16.github.io/github.com/"> "github.com" Site Clone 보러가기 </a>
 	</li>
 </ul>
 
