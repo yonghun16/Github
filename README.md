@@ -1,16 +1,20 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=180&section=header&text=GitHub%20메인%20페이지%20클론&fontSize=45&animation=fadeIn&fontAlignY=38&desc=FrontEnd16&descAlignY=55&descAlign=85)
 
-
+&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://raw.githubusercontent.com/yonghun16/Github/main/github_front_page.png" width=800px />
-
+	
 <ul>
 	<li>
-		<a href="https://yonghun16.github.io/github.com/"> "github.com" Site Clone 보러가기 </a>
+		<a href="https://github.com/"> 원본 보러가기 </a>
+	</li>
+	<li>
+		<a href="https://yonghun16.github.io/github.com/"> Clone 보러가기 </a>
+	</li>
+	<li>
+		반응형(O), 백엔드(X)
 	</li>
 </ul>
-
-<br>
-
+</br>
 <h4>Powerd by</h4>
 <div>
 	<a href="https://html.spec.whatwg.org/">
